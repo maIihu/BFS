@@ -20,7 +20,7 @@ struct BFSLog {
 vector<BFSLog> logs;
 
 void read_input() {
-    ifstream file("D:/Nam3-Ky2/_TriTueNhanTao/BTL/input.txt");
+    ifstream file("D:/Nam3-Ky2/_TriTueNhanTao/BTL/BFS/input.txt");
     if (!file.is_open()) {
         cout << "Khong mo duoc file" << endl;
         return;
@@ -84,7 +84,7 @@ void bfs(int s) {
     }
 }
 
-void write_output(int e, string file_name = "D:/Nam3-Ky2/_TriTueNhanTao/BTL/output.txt") {
+void write_output(int e, string file_name = "D:/Nam3-Ky2/_TriTueNhanTao/BTL/BFS/output.txt") {
     ofstream file(file_name);
     if (!file) {
         cerr << "Khong the mo file " << file_name << endl;
@@ -117,6 +117,7 @@ void write_output(int e, string file_name = "D:/Nam3-Ky2/_TriTueNhanTao/BTL/outp
         file << char('A' + e) << endl;
     }
     file.close();
+    cout << "Da in ra file " + file_name << endl;
 }
 
 int main() {
@@ -132,6 +133,6 @@ int main() {
     }
     cout << "Diem dau: " << char(st + 'A') << ' ' << "Diem cuoi: " << char(ed + 'A') << endl;
     bfs(st);
-    cout << "\nKet qua: " << endl;
+
     write_output(ed);
 }
