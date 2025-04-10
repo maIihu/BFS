@@ -1,0 +1,3 @@
+D:/Nam3-Ky2/_TriTueNhanTao/BTL/cmake-build-debug/CMakeFiles/BTL.dir
+D:/Nam3-Ky2/_TriTueNhanTao/BTL/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Nam3-Ky2/_TriTueNhanTao/BTL/cmake-build-debug/CMakeFiles/rebuild_cache.dir
